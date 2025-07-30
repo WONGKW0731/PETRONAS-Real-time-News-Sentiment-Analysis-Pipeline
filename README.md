@@ -76,29 +76,6 @@ The pipeline follows these main stages:
 6.  **Run the Pipeline:**
     Execute the main driver script to start the data ingestion and processing pipeline. Ensure Kafka, Spark, MongoDB, and Neo4j services are running.
 
-## File Structure
-
-The project is organized into several modules, each responsible for a specific part of the pipeline:
-
-
-├── data_ingestion/
-│   ├── config.py
-│   ├── news_api_fetcher.py
-│   └── article_scraper.py
-├── model_building/
-│   ├── sentiment_pipeline.py
-│   └── data_enricher.py
-├── real_time_analysis/
-│   ├── streaming_processor.py
-│   └── text_cleaner.py
-├── querying_reporting/
-│   └── mongo_queries.py
-├── relationship_analysis/
-│   └── neo4j_connector.py
-├── main.py                  # Main driver script
-└── requirements.txt         # Python dependencies
-
-
 ## Querying and Reporting
 
 The final data can be queried directly from MongoDB and Neo4j. The report (`G 1-3_TeamReport (1).pdf`) contains examples of analytical queries, such as:
